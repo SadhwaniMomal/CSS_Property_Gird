@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* gird property on parent */
+.container {
+  height: 700px;
+  border: 1px solid red;
+  display: grid;
+  gap: 10px;
+
+  /* for example we are given gap in content use that cs property */
+  /* gap: 10px; */
+
+  /* define that property width  */
+  grid-template-columns: 300px 200px 300px;
+
+  /* define that property height  */
+  /* grid-template-rows: 100px 200px 300px; */
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+  /* define same propert in all content use this  */
+  /* grid-template-rows: repeat(4, 1fr); */
+  /* justify-content: center; */
+  /* align-content: start; */
+  /* align-items: end; */
+}
+
+/* gird child propery */
+
+.box {
+  border: 2px solid green;
+  padding: 12px;
+}
+
+#box-1 {
+  background-color: aquamarine;
+  /* justify-self: stretch; */
+  /* align-items: center; */
+  grid-column: 1/6;
+}
+#box-2 {
+  background-color: bisque;
+  grid-row: 2/5;
+}
+#box-3 {
+  background-color: burlywood;
+  /* justify-content: center; */
+  grid-column: 4/2;
+}
+#box-4 {
+  background-color: aquamarine;
+  /* justify-content: center; */
+  grid-row: 4/5;
+}
+
+#box-5 {
+  background-color: cadetblue;
+  grid-column: 5/6;
+}
